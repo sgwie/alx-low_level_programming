@@ -2,7 +2,6 @@
 /* Prints out a defined string*/
 int main(void)
 {
-char hello = "Programming is like building a multilingual puzzle";
-puts(hello);
+puts("Programming is like building a multilingual puzzle");
 return (0);
 }

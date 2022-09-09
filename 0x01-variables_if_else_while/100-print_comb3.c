@@ -14,7 +14,7 @@ b = 48;
 a = 48;
 while (a < 58)
 {
-if (b != i && b < a)
+if (b != a && b < a)
 {
 putchar(b);
 putchar(a);

@@ -6,16 +6,13 @@
  */
 int main(void)
 {
-char c;
-for (c = 'a'; c <= 'z'; c++)
+char ch[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+int a;
+
+for (a = 0; a < 52; a++)
 {
-putchar (c);
+putchar(ch[a]);
 }
-for
-(c = 'A'; c <= 'Z'; c++)
-{
-putchar (c);
-}
-putchar ('\n');
+putchar('\n');
 return (0);
 }

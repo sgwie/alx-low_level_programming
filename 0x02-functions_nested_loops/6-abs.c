@@ -2,6 +2,8 @@
 /**
  *_abs - Computes absolute number
  *
+ *@a: Number to return absolute value
+ *
  *Return: Absolute value
  */
 int _abs(int a)

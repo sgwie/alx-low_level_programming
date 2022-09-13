@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *print_sign - Checks if number is positve,zero or negetive
+ *_print_sign - Checks if number is positve,zero or negetive
  *
  *@n: Number
  *
@@ -10,17 +10,17 @@ int _print_sign(int n)
 {
 if (n > 0)
 {
-putchar(43);
+_putchar(43);
 return (1);
 }
 else if (n == 0)
 {
-putchar(48);
+_putchar(48);
 return (0);
 }
 else
 {
-putchar(45);
+_putchar(45);
 return (-1);
 }
 }

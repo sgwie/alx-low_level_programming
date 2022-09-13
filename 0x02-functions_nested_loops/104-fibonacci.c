@@ -1,27 +1,21 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+/**
+ *main - Prints first 100 fibonacci terms
+ *
+ *Return: 0
+ */
+int main(void)
 {
- long int first=0, second=1, i, n, sum=0;
-  printf("Enter the number of terms: ");
-  scanf("%ld",&n);
-  //accepting the terms
-  printf("Fibonacci Series:");
-  for(i=0 ; i<n ; i++)
-    {
-      if(i <= 1)
-	{
-	  sum=i;
-	}
-      //to print 0 and 1
-      else
-	{
-	  sum=first + second;
-	  first=second;
-	  second=sum;
-	  //to calculate the remaining terms.
-	  //value of first and second changes as new term is printed.
-	}
-      printf(" %ld",sum);
-	}
-  return 0;
+int i;
+long int t1 = 1, t2 = 2, nt;
+printf("%ld, %ld", t1, t2);
+for (i = 0; i <= 98; ++i)
+{
+nt = t1 + t2;
+printf(", %ld", nt);
+t1 = t2;
+t2 = nt;
+}
+printf("\n");
+return (0);
 }

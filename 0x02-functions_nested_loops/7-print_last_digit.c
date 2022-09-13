@@ -12,8 +12,12 @@ int b;
 b = a % 10;
 if (b < 0)
 {
-return (-1 * b);
+_putchar(-b +48);
+return (-b);
 }
 else
+{
+_putchar(b + 48 );
 return (b);
+}
 }

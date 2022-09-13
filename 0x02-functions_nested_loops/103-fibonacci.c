@@ -13,9 +13,9 @@ while (nt <= 4000000)
 nt = t1 + t2;
 t1 = t2;
 t2 = nt;
-if ((t1 % 2 == 0)
+ if ((t1 % 2 == 0))
 {
-ntc + = t1;
+ntc += t1;
 }
 }
 printf("%ld\n", ntc);

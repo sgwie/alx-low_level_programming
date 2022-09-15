@@ -19,15 +19,17 @@ int largest;
 if (a > b && a > c)
 {
 largest = a;
+printf("%d\n is the largest number", a);
 }
 else if (b > a && b > c)
 {
 largest = b;
+printf("%d\n is the largest number", b);
 }
 else
 {
 largest = c;
+printf("%d\n is the largest number", c);
 }
-printf("%d\n is the largest number", largest);
 return (largest);
 }

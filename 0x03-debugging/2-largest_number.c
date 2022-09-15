@@ -12,10 +12,10 @@
  * Return: largest number
  */
 
-int largest_number(int a, int b, int c)
+int largest_number(void)
 {
   
-int largest;
+int a, b, c, largest;
 
 if (a > b && a > c)
 {
@@ -29,5 +29,6 @@ else
 {
 largest = c;
 }
+return (0);
 printf("%d \n is the largest number" , largest);
 }

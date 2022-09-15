@@ -1,7 +1,7 @@
 #include <stdio.h>
-int main(int a, int b, int c)
+int main(void)
 {
-  int largest;
+  int a, b, c, largest;
   a = 10, b = 20, c = 30;
   if (a > b && a > c)
     {
@@ -15,6 +15,6 @@ int main(int a, int b, int c)
     {
       largest = c;
     }
-  printf("%d\n is the largest number", largest);
-  return (largest);
+  printf("%d is the largest number \n", largest);
+  return (0);
 }

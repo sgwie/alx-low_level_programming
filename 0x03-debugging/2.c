@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int main(void)
+int main(int a, int b, int c)
 {
-  int a, b, c,largest;
+  int largest;
   a =10, b = 20, c = 30;
 
   if (a > b && a > c)
@@ -17,5 +17,5 @@ int main(void)
     {
       largest = c;
     }
-  printf("%d is the largest number \n" , largest);
+  return (largest);
 }

@@ -30,5 +30,4 @@ else
 largest = c;
 }
 return(largest);
-printf("is the largest number");
 }

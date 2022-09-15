@@ -7,15 +7,20 @@
  */
 void main(void)
 {
-  int c;
-      for (c = 0; c <= 14; c++)
+  int a, b, n;
+  printf("Enter a number");
+  scanf("%d", &n);
+  if (n>0)
+    {
+  for (b = 0; b < n ; b++)
+    {
+      for (a = 0; a < n; a++)
 	{
-	  if (c > 9)
-	    {
-	      putchar((c / 10) + 48);
-	    }
-	  putchar((c % 10) + 48);
-	  
+	  putchar(35);
 	}
       putchar('\n');
+    }
+    }
+  else
+    putchar('\n');
 }

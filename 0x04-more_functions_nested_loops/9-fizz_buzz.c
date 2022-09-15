@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers 1 to 100.
+ *fizz - Prints numbers 1 to 100.
  *For multiples of 3 print Fizz
  *For multiples of 5 print Buzz
  *For multiples of 3 and 5 print FizzBuzz
  *
- * Return: no return.
+ * Return: 0.
  */
 int main(void)
 {
@@ -32,4 +32,5 @@ printf(" %d", a);
 }
 }
 printf("\n");
+return (0);
 }

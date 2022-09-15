@@ -3,7 +3,7 @@
 /**
  * print_square - Prints square of n numbers
  *
- *@n: Number of # to be printed
+ *@size: Number of # to be printed
  *
  * Return: Void
  */

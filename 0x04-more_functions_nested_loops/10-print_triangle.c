@@ -20,7 +20,7 @@ _putchar(32);
 b++;
 }
 b = 0;
-while (b < i)
+while (b < a)
 {
 _putchar(35);
 b++;

@@ -21,7 +21,7 @@ b++;
 }
 _putchar('\\');
 _putchar('\n');
-i++;
+a++;
 }
 if (a == 0)
 _putchar('\n');

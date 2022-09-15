@@ -1,16 +1,17 @@
 #include <stdio.h>
 
 /**
- *fizz - Prints numbers 1 to 100.
- *For multiples of 3 print Fizz
- *For multiples of 5 print Buzz
- *For multiples of 3 and 5 print FizzBuzz
+ * main - Prints numbers 1 to 100
+ *        Multiples of 3 prints Fizz
+ *        Multiples of 5 prints Buzz
+ *        Multiples of 3 and 5 prints FizzBuzz
  *
- * Return: 0.
+ *Return: Always 0.
  */
 int main(void)
 {
 int a;
+a = 1;
 printf("%d", a);
 for (a = 2; a <= 100; a++)
 {

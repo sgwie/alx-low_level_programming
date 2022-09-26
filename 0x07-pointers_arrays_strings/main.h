@@ -1,4 +1,4 @@
-0;10;1c0;10;1c#ifndef main_h_
+#ifndef main_h_
 #define main_h_
 
 char *_memset(char *s, char b, unsigned int n);

@@ -16,7 +16,7 @@ return (check(n, 2));
 
 /**
  * check - Check all number < n if they can divide it
-
+ *
  * @n: Integer input
  * @b: Integr input
  *

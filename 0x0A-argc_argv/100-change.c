@@ -35,7 +35,7 @@ else if (cents >= 2)
 cents -= 2;
 else if (cents >= 1)
 cents -= 1;
-numeber += 1;
+number += 1;
 }
 printf("%d\n", number);
 return (0);

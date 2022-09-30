@@ -5,11 +5,11 @@
 #include <string.h>
 
 /**
- * check - Checks string if there are digits
+ *check - Checks string if there are digits
  *
  * @s: Array string
  *
- * Return; 0
+ * Return: 0
  */
 
 int check(char *s)
@@ -46,7 +46,7 @@ int sum = 0;
 c = 1;
 while (c < argc)
 {
-if(check(argv[c]))
+if (check(argv[c]))
 {
 s = atoi(argv[c]);
 sum += s;

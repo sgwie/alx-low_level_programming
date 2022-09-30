@@ -2,6 +2,6 @@
 #define main_h_
 
 int _putchar(char);
-int check_num(char *str);
+int check(char *s);
 
 #endif

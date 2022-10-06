@@ -1,54 +1,49 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
-* _strlen - Length of a string
-*
-* @s: string
-*
-* Return: Length
+ *_strlen - Counts string length
+ *
+ *@s: String
+ *
+ * Return: Length of string
  */
 
-unsigned int _strlen(char *s)
+int _strlen(char *s)
 {
-  unsigned int size = 0;
-  for (; s[size] != '\0'; size++)
-    ;
-  return (size);
+  unsigned int c = 0;
+  while (s[c] != '\0')
+    c++;
+  return (c);
 }
-
 /**
- * *string_nconcat - concatenates two strings
- * @s1: string 1
- * @s2: string 2
- * @n: first bytes of s2 to be used
- * Return: pointer or NULL
+ *str_concat- Concatenates two strings
+ *@s1: String
+ *@s2: String
+ *Return: Concatenated string
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-  unsigned int i, j;
-  char *m;
-
+  char *pointer;
+  unsigned int i, j, size;
   if (s1 == NULL)
     s1 = "";
   if (s2 == NULL)
     s2 = "";
-
-  if (n < _strlen(s2))
-    m = malloc(_strlen(s1) + n * sizeof(char) + 1);
-  else
-    m = malloc(_strlen(s1) + _strlen(s2) + 1);
-
-  if (m == 0)
-    return (NULL);
-
-  for (i = 0; s1[i] != '\0'; i++)
-    m[i] = s1[i];
-
-  for (j = 0; s2[j] != '\0' && j < n; i++, j++)
-    m[i] = s2[j];
-
-  m[i] = '\0';
-
-  return (m);
+  if (n > _strlen(s2))
+    n = _strlen(s2);
+  size = _strlen(s1) + n;
+  pointer=malloc(size + 1);
+  if (pointer == NULL)
+    {
+      return (NULL);
+    }
+  for (i = 0; i < size; i++)
+    if (i < _strlen(s1))
+      *(pointer + i) = *(s1 + i);
+    else
+      pointer[i] = s2[i - _strlen(s1)];
+  pointer[i] = '\0';
+  return (pointer);
 }

@@ -33,7 +33,7 @@ if (s2 == NULL)
 s2 = "";
 size = (_strlen(s1) + _strlen(s2) + 1);
 pointer = (char *) malloc(size *sizeof(char));
-if (pointer == 0;
+if (pointer == 0)
 {
 return (NULL);
 }

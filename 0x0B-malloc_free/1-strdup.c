@@ -11,30 +11,30 @@
 
 char *_strdup(char *str)
 {
-  unsigned int length, i;
-  char *string;
+unsigned int length, i;
+char *string;
   
-  if (str == NULL)
-    {
-      return (NULL);
-    }
+if (str == NULL)
+{
+return (NULL);
+}
 
-  length = 0;
-    while (str[length] != '\0' )
-      {
-	length++;
-      }
+length = 0;
+while (str[length] != '\0' )
+{
+length++;
+}
 
-    string = malloc(sizeof(char) * (length + 1));
-    if (string == NULL)
-      {
-	return (NULL);
-      }
+string = malloc(sizeof(char) * (length + 1));
+if (string == NULL)
+{
+return (NULL);
+}
     
-  for (i = 0; i < length; i++)
-  {
-    string[i] = str[i];
-  }
-  string[length] = '\0';
-  return (string);
+for (i = 0; i < length; i++)
+{
+string[i] = str[i];
+}
+string[length] = '\0';
+return (string);
 }

@@ -17,7 +17,7 @@ c++;
 return (c);
 }
 /**
- *str_concat- Concatenates two strings
+ *string_nconcat- Concatenates two strings
  *
  *@s1: String
  *@s2: String
@@ -43,11 +43,13 @@ if (pointer == 0)
 return (NULL);
 }
 for (i = 0; *(s1 + i) != '\0'; i++)
+{
 *(pointer + i) = *(s1 + i);
-for (j = 0; j < n && *(s2 + j) != '\0'; j++, i++)
+}
+for (j = 0; *(s2 + j) != '\0' && j < n; i++, j++)
 {
 *(pointer + i) = *(s2 + j);
 }
-xpointer[i] = '\0';
+pointer[i] = '\0';
 return (pointer);
 }

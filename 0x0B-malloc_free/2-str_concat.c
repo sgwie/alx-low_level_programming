@@ -12,14 +12,14 @@
 int _strlen(char *s)
 {
 unsigned int c = 0;
-while (*(s + c) != '\0')
+while (s[c] != '\0')
 c++;
 return (c);
 }
 /**
 *str_concat- Concatenates two strings
 *@s1: String
-*@s2: String*
+*@s2: String
 *Return: Concatenated string
 */
 

@@ -37,17 +37,17 @@ s2 = "";
 if (n < _strlen(s2))
 pointer = malloc(_strlen(s1) + n *sizeof(char) + 1);
 else
-pointer = malloc (_strlen(s1) + _strlen(s2) + 1);
+pointer = malloc(_strlen(s1) + _strlen(s2) + 1);
 if (pointer == 0)
 {
 return (NULL);
 }
 for (i = 0; *(s1 + i) != '\0'; i++)
 *(pointer + i) = *(s1 + i);
-for (j = 0; j < n && *(s2 + j) != '\0'; j++)
+for (j = 0; j < n && *(s2 + j) != '\0'; j++, i++)
 {
 *(pointer + i) = *(s2 + j);
-i++;
 }
+xpointer[i] = '\0';
 return (pointer);
 }

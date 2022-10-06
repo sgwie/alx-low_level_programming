@@ -1,55 +1,54 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- *_strlen - Counts string length
- *
- *@s: String
- *
- * Return: Length of string
+* _strlen - Length of a string
+*
+* @s: string
+*
+* Return: Length
  */
 
-int _strlen(char *s)
+unsigned int _strlen(char *s)
 {
-unsigned int c = 0;
-while (s[c] != '\0')
-c++;
-return (c);
+  unsigned int size = 0;
+  for (; s[size] != '\0'; size++)
+    ;
+  return (size);
 }
+
 /**
- *string_nconcat- Concatenates two strings
- *
- *@s1: String
- *@s2: String
- *@n: Integer value
- *
- *Return: Concatenated string
+ * *string_nconcat - concatenates two strings
+ * @s1: string 1
+ * @s2: string 2
+ * @n: first bytes of s2 to be used
+ * Return: pointer or NULL
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *pointer;
-unsigned int i, j;
-if (s1 == NULL)
-s1 = "";
-if (s2 == NULL)
-s2 = "";
-if (n < _strlen(s2))
-pointer = malloc(_strlen(s1) + n *sizeof(char) + 1);
-else
-pointer = malloc(_strlen(s1) + _strlen(s2) + 1);
-if (pointer == 0)
-{
-return (NULL);
-}
-for (i = 0; *(s1 + i) != '\0'; i++)
-{
-*(pointer + i) = *(s1 + i);
-}
-for (j = 0; *(s2 + j) != '\0' && j < n; i++, j++)
-{
-*(pointer + i) = *(s2 + j);
-}
-pointer[i] = '\0';
-return (pointer);
+  unsigned int i, j;
+  char *m;
+
+  if (s1 == NULL)
+    s1 = "";
+  if (s2 == NULL)
+    s2 = "";
+
+  if (n < _strlen(s2))
+    m = malloc(_strlen(s1) + n * sizeof(char) + 1);
+  else
+    m = malloc(_strlen(s1) + _strlen(s2) + 1);
+
+  if (m == 0)
+    return (NULL);
+
+  for (i = 0; s1[i] != '\0'; i++)
+    m[i] = s1[i];
+
+  for (j = 0; s2[j] != '\0' && j < n; i++, j++)
+    m[i] = s2[j];
+
+  m[i] = '\0';
+
+  return (m);
 }

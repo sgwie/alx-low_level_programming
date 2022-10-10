@@ -1,4 +1,4 @@
-#include <stdio.h>
+0;10;1c0;10;1c#include <stdio.h>
 
 /**
  * main - Prints name of the file program was compiled from
@@ -8,6 +8,6 @@
 
 int main(void)
 {
-  printf("%s\n", __FILE__);
-  return (0);
+printf("%s\n", __FILE__);
+return (0);
 }

@@ -1,4 +1,4 @@
-0;10;1c0;10;1c#ifndef FUNCTION_POINTERS_H
+#ifndef FUNCTION_POINTERS_H
 #define FUNCTION_POINTERS_H
 
 #include<stddef.h>

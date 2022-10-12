@@ -5,8 +5,8 @@
  *
  * @s: the operator by the user
  *
- * Return: pointer 
- */
+* Return: pointer
+*/
 
 int (*get_op_func(char *s))(int, int)
 {

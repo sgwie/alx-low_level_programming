@@ -3,8 +3,8 @@
 /**
  * print_strings - prints strings
  *
- * @separator: string 
- * @n: number of strings
+ * @separator: string
+ *@n: number of strings
  *
  * Return: no return.
  */

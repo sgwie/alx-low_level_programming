@@ -19,7 +19,7 @@ while (str[str_len] != '\0')
 str_len++;
 new_node = malloc(sizeof(list_t));
 if (new_node == NULL)
-return (NULL)
+return (NULL);
 if (*head == NULL)
 new_node->next = NULL;
 else
